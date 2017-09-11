@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.thinkive.bank.abslistviewdemo"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    testCompile 'junit:junit:4.12'
+    //    详情参看GitHub网址：https://github.com/yqritc/RecyclerView-FlexibleDivider
+    compile 'com.yqritc:recyclerview-flexibledivider:1.4.0'
+    compile 'com.android.support:recyclerview-v7:23.0.0'
+    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'com.squareup.okhttp:okhttp:2.7.5'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    //处理图片的框架
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //上拉加载、下拉刷新的材料设计布局
+    compile 'com.cjj.materialrefeshlayout:library:1.3.0'
+    //上拉加载、下拉刷新的自定义RecyclerView控件
+    // 详情参考：https://github.com/WuXiaolong/PullLoadMoreRecyclerView
+    compile 'com.wuxiaolong.pullloadmorerecyclerview:library:1.1.2'
+    compile project(':library')
+}

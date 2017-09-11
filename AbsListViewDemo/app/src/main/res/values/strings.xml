@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ListView、RecyclerView的使用</string>
+    <string name="btn_lv">ListView的使用</string>
+    <string name="btn_rv">RecyclerView的使用</string>
+    <string name="btn_gv">GridView的使用</string>
+    <string name="pulldown">向下拉动可以刷新</string>
+    <string name="pullup">向上拉动可以刷新</string>
+    <string name="release">松开可以刷新</string>
+    <string name="loading">加载中...</string>
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在刷新</string>
+    <string name="xlistview_footer_hint_normal">上拉加载更多</string>
+    <string name="xlistview_footer_hint_ready">松开加载更多</string>
+    <string name="xlistview_footer_hint_loading">正在加载更多...</string>
+    <string name="xlistview_footer_hint_complete">已加载完全部</string>
+</resources>

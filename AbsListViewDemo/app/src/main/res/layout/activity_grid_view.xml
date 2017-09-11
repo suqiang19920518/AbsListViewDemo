@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/gv_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/divider_color"
+        android:horizontalSpacing="1dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="1dp"
+        ptr:ptrDrawable="@mipmap/progress_bar_icon"
+        ptr:ptrHeaderBackground="@color/ptrHeaderBackground"
+        ptr:ptrHeaderTextColor="@color/ptrHeaderTextColor"
+        ptr:ptrMode="both" />
+
+
+    <!--android:horizontalSpacing   两列之间的间距-->
+    <!--android:verticalSpacing     两行之间的间距-->
+    <!--android:numColumns  设置列数-->
+
+    <!--
+
+    <GridView
+        android:id="@+id/gv_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGray"
+        android:horizontalSpacing="0.5dp"
+        android:numColumns="3"
+        android:verticalSpacing="0.5dp"/>
+
+     -->
+
+    <TextView
+        android:id="@+id/emptyText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="点击重新加载或下拉刷新..." />
+
+</RelativeLayout>
