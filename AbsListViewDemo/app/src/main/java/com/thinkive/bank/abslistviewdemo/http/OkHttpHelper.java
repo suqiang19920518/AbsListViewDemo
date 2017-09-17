@@ -115,7 +115,8 @@ public class OkHttpHelper {
                             Object obj = mGson.fromJson(resultStr, callback.mType);
                             callbackSuccess(callback, response, obj);
                         } catch (com.google.gson.JsonParseException e) { // Json解析的错误
-                            callback.onError(response, response.code(), e);
+//                            callback.onError(response, response.code(), e);//在子线程中执行
+                            callbackError(callback, response,e);//在主线程中执行
                         }
                     }
                 } else {
